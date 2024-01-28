@@ -1,0 +1,69 @@
+site_name: Kratapps 
+plugins:
+  - search:
+#      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\u200b\-\.,!=\[\]()"`/]+'
+theme:
+  name: material
+  logo: images/logo_kratapps.svg
+  favicon: images/favicon.ico
+  features:
+  #  - index.pages
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    - navigation.path
+    # - navigation.prune
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      accent: custom
+#      toggle:
+#        icon: material/toggle-switch
+#        name: dark mode
+#    - scheme: slate
+#      primary: black
+#      accent: indigo
+#      toggle:
+#        icon: material/toggle-switch-off
+#        name: light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/regular/envelope
+      link: mailto:sales@kratapps.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/kratapps
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/hljs-kratapps.css
+extra_javascript:
+  - scripts/highlight.min.js
+  - scripts/highlightConfig.js
+nav:
+  - Home: index.md
