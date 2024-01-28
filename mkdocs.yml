@@ -1,4 +1,4 @@
-site_name: Kratapps 
+site_name: Docs 
 plugins:
   - search:
 #      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
