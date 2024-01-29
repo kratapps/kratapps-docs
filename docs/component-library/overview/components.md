@@ -23,4 +23,4 @@ or clone the project and deploy using standard sfdx command.
 ## Documentation
 
 Full documentation is available at
-[docs.kratapps.com](http://127.0.0.1:8000/component-library/overview/components/).
+[docs.kratapps.com](https://docs.kratapps.com/component-library/overview/components/).
