@@ -66,9 +66,13 @@ extra_javascript:
   - scripts/highlight.min.js
   - scripts/highlightConfig.js
 nav:
-  - Setup Audit Trail: setup-audit-trail/reference.md
+  - Component Library:
+    - Overview: component-library/overview/components.md
+    - LWC:
+      - Spinner: component-library/spinner.md
   - Test Data Factory: 
     - Docs: test-data-factory/index.md
     - Release Notes:
         - test-data-factory/release-notes/1.4.md
     - MIT License: https://github.com/kratapps/test-data-factory/blob/main/LICENSE
+  - Setup Audit Trail: setup-audit-trail/reference.md
