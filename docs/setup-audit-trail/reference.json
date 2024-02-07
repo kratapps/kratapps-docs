@@ -2759,6 +2759,13 @@
     "section": "Call Centers"
   },
   {
+    "action": "insertCertificate",
+    "display": "Created Certificate DeathStarCert",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
+  },
+  {
     "action": "insertConnectedApplication",
     "display": "Installed Connected App Death Star to Salesforce",
     "title": "Connected Apps",
@@ -2829,6 +2836,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "insertTwoFactorWebAuthN",
+    "display": "Security Key credential 0moJw00000003sL with nickname \"Security Key #1\" added for anakin@skywalker.com",
+    "title": "User Activation and Auth",
+    "category": "User Management",
+    "section": null
+  },
+  {
     "action": "installedpackagingapp",
     "display": "Installed AppExchange package: One Logger",
     "title": "Managed Packages",
@@ -2857,6 +2871,13 @@
     "section": "Customize Leads"
   },
   {
+    "action": "lightninglogincancel",
+    "display": "Canceled Lightning Login for anakin@skywalker.com",
+    "title": "User Activation and Auth",
+    "category": "User Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "lightningloginenroll",
     "display": "Enrolled anakin@skywalker.com in Lightning Login",
     "title": "User Activation and Auth",
@@ -2866,7 +2887,7 @@
   {
     "action": "LocalStorageForLogoutUrlOffOn",
     "display": "Changed Use Local Storage for Logout URL from Off to On",
-    "title": "Org Preferences",
+    "title": "Session Settings",
     "category": "Organization Management",
     "section": "Session Settings"
   },
@@ -3849,6 +3870,13 @@
     "section": "Rename Tabs and Labels"
   },
   {
+    "action": "requiredSessionLevelForProfile",
+    "display": "Changed profile Admin: Changed RequiredSessionLevel Value from None to High Assurance",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "resendBouncedEmailsoff",
     "display": "Changed Return bounced emails to sender from on to off",
     "title": "Email Administration",
@@ -4510,6 +4538,20 @@
     "section": null
   },
   {
+    "action": "twoFactorWebAuthN_editNickname",
+    "display": "Changed Security Key nickname from \"Security Key #1\" to \"Security Key\" for anakin@skywalker.com",
+    "title": "User Activation and Auth",
+    "category": "User Management",
+    "section": null
+  },
+  {
+    "action": "u2FEnabledOffOn",
+    "display": "Organization setup action: u2FEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "unblockConnectedApplication",
     "display": "Unblocked Connected App Death Star to Salesforce",
     "title": "Connected Apps",
@@ -4629,6 +4671,13 @@
     "section": "Sharing Sets"
   },
   {
+    "action": "updateSessionSecurityLevel",
+    "display": "Session Security Level for Passwordless Login changed from High Assurance to Standard",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "updateSharingRule",
     "display": "Updated Opportunity Criteria-Based Sharing Rule Owned By CORP: Changed Name from Owned By ISO to Owned By CORP, DeveloperName from Owned_By_ISO to Owned_By_CORP",
     "title": "Sharing Rules",
@@ -4652,7 +4701,7 @@
   {
     "action": "uploadCertificateChain",
     "display": "Uploaded Certificate Chain for DeathStar IDP",
-    "title": "Org Config",
+    "title": "Certificate and Key Management",
     "category": "Organization Management",
     "section": "Certificate and Key Management"
   },
