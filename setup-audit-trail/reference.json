@@ -14,7 +14,34 @@
     "category": "Schema",
     "section": "Custom Objects"
   },
-
+  {
+    "action": "s1EncryptedStoragePref2OnOff",
+    "display": "Organization setup action: s1EncryptedStoragePref2OnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "conversationZoomPrefOnOff",
+    "display": "Organization setup action: conversationZoomPrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "inviteCsnUserEnabledOnOff",
+    "display": "Organization setup action: inviteCsnUserEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "workOrdersEnabledOnOff",
+    "display": "Organization setup action: workOrdersEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
   {
     "action": "sellerHomePrefOffOn",
     "display": "Organization setup action: sellerHomePrefOffOn has changed.",
@@ -22,7 +49,13 @@
     "category": "Organization Management",
     "section": null
   },
-
+  {
+    "action": "depriveSoqlAccessOffOn",
+    "display": "Organization setup action: depriveSoqlAccessOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
   {
     "action": "accountInspectorPrefOffOn",
     "display": "Organization setup action: accountInspectorPrefOffOn has changed.",
