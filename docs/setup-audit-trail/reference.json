@@ -3793,6 +3793,20 @@
     "section": "API Usage Notification"
   },
   {
+    "action": "recalcSharingRuleComplete",
+    "display": "Completed sharing rule recalculation: Account",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Rules"
+  },
+  {
+    "action": "recalcSharingRuleStart",
+    "display": "Initiated sharing rule recalculation: Opportunity",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Rules"
+  },
+  {
     "action": "recalcSingleSharingRuleComplete",
     "display": "Completed Opportunity Owner Rule recalculation: EMEA",
     "title": "Sharing Rules",
