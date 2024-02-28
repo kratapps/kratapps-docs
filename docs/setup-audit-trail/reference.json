@@ -405,6 +405,7 @@
   },
   {
     "action": "changedCFDefaultCustom",
+    "display": "Changed default value for Prepaid Margin custom field on Quotes from Checked to Unchecked",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
@@ -4595,13 +4596,17 @@
   },
   {
     "action": "suPRMAdminLogin",
+    "display": "Logged in using Login-As access for Anakin Skywalker",
     "title": "User Activation and Auth",
-    "category": "User Management"
+    "category": "User Management",
+    "section": "Manage Users"
   },
   {
     "action": "suPRMAdminLogout",
+    "display": "Logged out using Login-As access for Anakin Skywalker",
     "title": "User Activation and Auth",
-    "category": "User Management"
+    "category": "User Management",
+    "section": "Manage Users"
   },
   {
     "action": "templateEnhancedFolderPrefOffOn",

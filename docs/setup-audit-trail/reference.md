@@ -36,8 +36,8 @@ Actions available in [JSON format](reference.json).
 - suNetworkAdminLogout (Manage Users) - Logged out using Login-As access for Anakin Skywalker
 - suOrgAdminLogin (Manage Users) - Logged in using Login-As access for Anakin Skywalker
 - suOrgAdminLogout (Manage Users) - Logged out using Login-As access for Anakin Skywalker
-- suPRMAdminLogin
-- suPRMAdminLogout
+- suPRMAdminLogin (Manage Users) - Logged in using Login-As access for Anakin Skywalker
+- suPRMAdminLogout (Manage Users) - Logged out using Login-As access for Anakin Skywalker
 - twoFactorWebAuthN_editNickname - Changed Security Key nickname from "Security Key #1" to "Security Key" for anakin@skywalker.com
 - unfrozeuser (Manage Users) - Unfroze user account for Darth Vader
 - unlockeduser (Manage Users) - Unlocked user anakin@skywalker.com (UserID: [0052A00000EsOI0])
@@ -872,7 +872,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - changedCF_RSFFilter (Customize Accounts) - Changed filter of rollup summary field Planets in the Empire
 - changedCFCustom (Custom Objects) - Changed label of custom field on Lightsaber from Owner to
 - changedCFDefault - Changed default value for Is Padawan custom field from Checked to Unchecked
-- changedCFDefaultCustom (Custom Objects)
+- changedCFDefaultCustom (Custom Objects) - Changed default value for Prepaid Margin custom field on Quotes from Checked to Unchecked
 - changedCFDefaultFormula
 - changedCFDefaultFormulaCustom (Custom Metadata Types) - Changed default value for Light Saber Color custom field on Jedi from "Green" to null
 - changedCFDevName (Customize Opportunities) - Changed field name of Sith Lord custom field from Jedi_Master to Sith_Lord
