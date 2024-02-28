@@ -258,8 +258,10 @@
   },
   {
     "action": "changeApplicationCertificate",
+    "display": "Changed Connected App Certificate from EMAILADDRESS=anakin@skywalker.com, O=DeathStar, L=Tatooine, ST=CA, C=GE to EMAILADDRESS=darth@vader.com, O=DeathStar, L=Tatooine, ST=CA, C=GE",
     "title": "Connected Apps",
-    "category": "Organization Management"
+    "category": "Organization Management",
+    "section": "Remote Access"
   },
   {
     "action": "changeApplicationClientCredentialEnabled",
@@ -4237,8 +4239,10 @@
   },
   {
     "action": "SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled",
+    "display": "Changed permission set DeathStar Service User Permissions: DeathStar connected app is disabled",
     "title": "Permission Sets",
-    "category": "Permission Management"
+    "category": "Permission Management",
+    "section": "Manage Users"
   },
   {
     "action": "SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Enabled",
