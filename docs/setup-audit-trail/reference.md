@@ -955,7 +955,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - changedCustEntDeployment (Custom Objects) - Changed deployment status of custom object Battleship from In Development to Deployed
 - changedCustEntLabel (Custom Objects) - Changed label for custom object from Death Star to Death Star 2
 - changedCustEntMask (Custom Objects) - Changed record name display format for custom object Estimate from Estimate-{000000} to E-{000000}
-- changedCustEntName
+- changedCustEntName (Custom Objects) - Changed object name of Death Star 2 custom object from Death_Star to Death_Star_2
 - changedCustEntRecName (Custom Objects) - Changed record name of custom object Droid from Droid Name to Droid Serial Number
 - changedCustEntRptOn (Custom Objects) - Changed Enable Reports setting for custom object Battleship from off to on
 - changedCustEntSearchIndexingOn (Custom Objects) - Changed Search Indexing setting for custom object Stormtrooper from off to on
