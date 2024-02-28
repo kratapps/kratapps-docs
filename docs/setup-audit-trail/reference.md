@@ -954,7 +954,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - changeDataCaptureCreatedWithChannel (Change Data Capture) - Added Change Data Capture entity User to channel ChangeEvents
 - changedCustEntDeployment (Custom Objects) - Changed deployment status of custom object Battleship from In Development to Deployed
 - changedCustEntLabel (Custom Objects) - Changed label for custom object from Death Star to Death Star 2
-- changedCustEntMask
+- changedCustEntMask (Custom Objects) - Changed record name display format for custom object Estimate from Estimate-{000000} to E-{000000}
 - changedCustEntName
 - changedCustEntRecName (Custom Objects) - Changed record name of custom object Droid from Droid Name to Droid Serial Number
 - changedCustEntRptOn (Custom Objects) - Changed Enable Reports setting for custom object Battleship from off to on
