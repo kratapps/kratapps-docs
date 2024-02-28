@@ -1183,7 +1183,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - addedFieldToCompactLayout (Custom Objects) - Added Name field to Death_Star Compact Layout on Death Star
 - assetlayout (Customize Assets) - Changed Asset page layout Asset Layout
 - campaignlayout (Customize Campaigns) - Changed Campaign page layout Campaign Layout
-- caselayout
+- caselayout (Customize Cases) - Changed Cases page layout CSS Page Layout 2.0
 - contactlayout (Customize Contacts) - Changed Contact page layout Contact Layout
 - contractlayout (Customize Contracts) - Changed Contract page layout Contract Layout
 - createdCompactLayout (Custom Objects) - Created Compact Layout Planet on Planet
