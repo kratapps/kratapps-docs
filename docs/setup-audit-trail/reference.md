@@ -229,7 +229,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - SetupEntityAccessAudit_PermissionSet_ApexClass_Enabled (Manage Users) - Changed permission set Sith Lord: DeathStarController Apex class access was enabled
 - SetupEntityAccessAudit_PermissionSet_ApexPage_Disabled
 - SetupEntityAccessAudit_PermissionSet_ApexPage_Enabled
-- SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled
+- SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled (Manage Users) - Changed permission set DeathStar Service User Permissions: DeathStar connected app is disabled
 - SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Enabled (Manage Users) - Changed permission set Sith Lord: DeathStar connected app is enabled
 - SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Disabled
 - SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Enabled (Manage Users) - Changed permission set Sith Lord: Lightsaber Category Custom Metadata Type was enabled
@@ -457,7 +457,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ### Connected Apps
 - addOauthClientCredentialUser (OAuth Client Credentials User) - Assigned OAuth client credentials user darth@vader.com (UserID: [005790000024p8r]) to app Death Star Connector (AppID: [0H479000000CcUh])
 - changeApplicationCallbackUrl (Application) - Changed Connected App Callback URL from https://death-star.cloud to https://death-star.cloud/oauth2/callback
-- changeApplicationCertificate
+- changeApplicationCertificate (Remote Access) - Changed Connected App Certificate from EMAILADDRESS=anakin@skywalker.com, O=DeathStar, L=Tatooine, ST=CA, C=GE to EMAILADDRESS=darth@vader.com, O=DeathStar, L=Tatooine, ST=CA, C=GE
 - changeApplicationClientCredentialEnabled (Application) - Changed Enable Client Credentials Flow from false to true
 - changeApplicationCodeCredentialEnabled (Application) - Changed connected app Enable Authorization Code and Credentials Flow setting from false to true
 - changeApplicationCodeCredentialPostOnly (Application) - Changed connected app Require user credentials in the POST body for Authorization Code and Credentials Flow setting from false to true
