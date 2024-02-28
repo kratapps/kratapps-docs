@@ -244,8 +244,10 @@
   },
   {
     "action": "caselayout",
+    "display": "Changed Cases page layout CSS Page Layout 2.0",
     "title": "Layouts",
-    "category": "UI"
+    "category": "UI",
+    "section": "Customize Cases"
   },
   {
     "action": "changeApplicationCallbackUrl",
