@@ -5,3 +5,4 @@ node scripts/preCommit.js
 
 git add docs/setup-audit-trail/actions.json
 git add docs/setup-audit-trail/reference.md
+
