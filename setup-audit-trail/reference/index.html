@@ -767,6 +767,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#validation-rules" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Rules
@@ -803,6 +812,15 @@
   <a href="#black-tab-framework" class="md-nav__link">
     <span class="md-ellipsis">
       Black Tab Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificate-and-key-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Certificate and Key Management
     </span>
   </a>
   
@@ -911,6 +929,24 @@
   <a href="#sandboxes" class="md-nav__link">
     <span class="md-ellipsis">
       Sandboxes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Settings
     </span>
   </a>
   
@@ -1320,6 +1356,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#validation-rules" class="md-nav__link">
     <span class="md-ellipsis">
       Validation Rules
@@ -1356,6 +1401,15 @@
   <a href="#black-tab-framework" class="md-nav__link">
     <span class="md-ellipsis">
       Black Tab Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificate-and-key-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Certificate and Key Management
     </span>
   </a>
   
@@ -1464,6 +1518,24 @@
   <a href="#sandboxes" class="md-nav__link">
     <span class="md-ellipsis">
       Sandboxes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Settings
     </span>
   </a>
   
@@ -1725,6 +1797,8 @@
 <li>deactivateduser (Manage Users) - Deactivated user Anakin Skywalker (UserID: [0052A00000EsOI0])</li>
 <li>frozeuser (Manage Users) - Froze user account for Darth Vader</li>
 <li>insertTwoFactorInfo2 (Manage Users) - Time-Based Token added for anakin@skywalker.com</li>
+<li>insertTwoFactorWebAuthN - Security Key credential 0moJw00000003sL with nickname "Security Key #1" added for anakin@skywalker.com</li>
+<li>lightninglogincancel (Manage Users) - Canceled Lightning Login for anakin@skywalker.com</li>
 <li>lightningloginenroll (Manage Users) - Enrolled anakin@skywalker.com in Lightning Login</li>
 <li>overridegrantaccessenabledoff (Manage Users) - Changed Administrators Can Log in as Any User from off to on</li>
 <li>PRMUserDisabled (Partner Relationship Management) - User anakin@skywalker.com disabled as a Partner user</li>
@@ -1737,12 +1811,13 @@
 <li>suOrgAdminLogout (Manage Users) - Logged out using Login-As access for Anakin Skywalker</li>
 <li>suPRMAdminLogin</li>
 <li>suPRMAdminLogout</li>
+<li>twoFactorWebAuthN_editNickname - Changed Security Key nickname from "Security Key #1" to "Security Key" for anakin@skywalker.com</li>
 <li>unfrozeuser (Manage Users) - Unfroze user account for Darth Vader</li>
 <li>unlockeduser (Manage Users) - Unlocked user anakin@skywalker.com (UserID: [0052A00000EsOI0])</li>
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('activateduser','changedpassword','changedsupportuseroffon','changedsupportuseronoff','createdcustomersuccessuser','createdpartneruser','createduser','CSPUserDisabled','deactivateduser','frozeuser','insertTwoFactorInfo2','lightningloginenroll','overridegrantaccessenabledoff','PRMUserDisabled','sessiongen','suloginaccessused','suLogout','suNetworkAdminLogin','suNetworkAdminLogout','suOrgAdminLogin','suOrgAdminLogout','suPRMAdminLogin','suPRMAdminLogout','unfrozeuser','unlockeduser') 
+WHERE Action IN ('activateduser','changedpassword','changedsupportuseroffon','changedsupportuseronoff','createdcustomersuccessuser','createdpartneruser','createduser','CSPUserDisabled','deactivateduser','frozeuser','insertTwoFactorInfo2','insertTwoFactorWebAuthN','lightninglogincancel','lightningloginenroll','overridegrantaccessenabledoff','PRMUserDisabled','sessiongen','suloginaccessused','suLogout','suNetworkAdminLogin','suNetworkAdminLogout','suOrgAdminLogin','suOrgAdminLogout','suPRMAdminLogin','suPRMAdminLogout','twoFactorWebAuthN_editNickname','unfrozeuser','unlockeduser') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="user-detail">User Detail</h3>
@@ -2006,12 +2081,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>createdprocessdefinition (Approval Process) - Created Approval Process: Visit Approval v2 for Object: Death Star Visit</li>
 <li>createdprocessnode (Approval Process) - Created Process Step: Trooper Approval for Approval Process: Visit Approval v2 for Object: Death Star Visit</li>
 <li>deactivatedprocessdefinition (Approval Process) - Deactivated Approval Process: OVisit Approval v2 for Object: Death Star Visit</li>
+<li>deletedprocessdefinition (Approval Process) - Deleted Approval Process: Visit Approval v2 for Object: Death Star Visit</li>
 <li>deletedprocessnode (Approval Process) - Deleted Process Step: Trooper Approval for Approval Process: Visit Approval v2 for Object: Death Star Visit</li>
 <li>removedprocessactionitem (Approval Process) - Removed Action: Approval for Approval Process: Visit Approval v2 for Object: Death Star Visit</li>
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('activatedprocessdefinition','addedprocessactionitem','changedprocessdefinition','changedprocessnode','createdprocessdefinition','createdprocessnode','deactivatedprocessdefinition','deletedprocessnode','removedprocessactionitem') 
+WHERE Action IN ('activatedprocessdefinition','addedprocessactionitem','changedprocessdefinition','changedprocessnode','createdprocessdefinition','createdprocessnode','deactivatedprocessdefinition','deletedprocessdefinition','deletedprocessnode','removedprocessactionitem') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="flows">Flows</h3>
@@ -2032,6 +2108,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
 WHERE Action IN ('activatedinteractiondefinition','activatedinteractiondefinitionWithSystemMode','activatedinteractiondefversion','activatedinteractiondefversionWithSystemMode','createdinteractiondefinition','createdinteractiondefversion','deactivatedinteractiondefinition','deactivatedinteractiondefversion','deactivatedinteractiondefversionWithSystemMode','deletedinteractiondefinition','deletedinteractiondefversion','renamedinteractiondefinition') 
+ORDER BY CreatedDate DESC LIMIT 1000
+</code></pre>
+<h3 id="integrations">Integrations</h3>
+<ul>
+<li>ExternalServicesCreate (Integrations) - Created External Service Registration QuoteAutoApprovals</li>
+<li>ExternalServicesSchemaChange (Integrations) - Changed External Service Registration QuoteAutoApprovals: schema was changed</li>
+</ul>
+<pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
+FROM SetupAuditTrail 
+WHERE Action IN ('ExternalServicesCreate','ExternalServicesSchemaChange') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="validation-rules">Validation Rules</h3>
@@ -2077,6 +2163,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
 WHERE Action IN ('BlackTabFrameworkActionChange','BlackTabFrameworkActionRun') 
+ORDER BY CreatedDate DESC LIMIT 1000
+</code></pre>
+<h3 id="certificate-and-key-management">Certificate and Key Management</h3>
+<ul>
+<li>insertCertificate (Certificate and Key Management) - Created Certificate DeathStarCert</li>
+<li>uploadCertificateChain (Certificate and Key Management) - Uploaded Certificate Chain for DeathStar IDP</li>
+</ul>
+<pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
+FROM SetupAuditTrail 
+WHERE Action IN ('insertCertificate','uploadCertificateChain') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="chatter-settings">Chatter Settings</h3>
@@ -2247,11 +2343,10 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>updatedBusinessProcessValues - Updated business process "Rebel Alliance Recruitment" picklist values: added Recruit Assessment, Onboarding, removed Recruit Approval</li>
 <li>updateddatedexchrate (Currency) - Updated dated exchange rate for currency EUR for start date 11/10/2021 from 0.864155 to 0.864155</li>
 <li>updatedgroup (Groups) - Updated Public Group Rebellion Members: Changed Name from Senate Members to Rebellion Members, DeveloperName from Senate_Members to Rebellion_Members</li>
-<li>uploadCertificateChain (Certificate and Key Management) - Uploaded Certificate Chain for DeathStar IDP</li>
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('changedconvrates','changedOrganizationAddress','changeServiceProviderSubjectType','createAllowedEmailDomain','createdgroup','createdrole','deleteAllowedEmailDomain','deletedgroup','deletedrole','groupMembership','holiday_insert','inserteddatedexchrate','oauthCorsPolicyEnabledOffOn','oauthCorsPolicyEnabledOnOff','role','tm_forecastUserChangedFor','updatedBusinessProcess','updatedBusinessProcessValues','updateddatedexchrate','updatedgroup','uploadCertificateChain') 
+WHERE Action IN ('changedconvrates','changedOrganizationAddress','changeServiceProviderSubjectType','createAllowedEmailDomain','createdgroup','createdrole','deleteAllowedEmailDomain','deletedgroup','deletedrole','groupMembership','holiday_insert','inserteddatedexchrate','oauthCorsPolicyEnabledOffOn','oauthCorsPolicyEnabledOnOff','role','tm_forecastUserChangedFor','updatedBusinessProcess','updatedBusinessProcessValues','updateddatedexchrate','updatedgroup') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="org-limits">Org Limits</h3>
@@ -2276,6 +2371,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>advancedCMTSecurityOnOff - Organization setup action: advancedCMTSecurityOnOff has changed.</li>
 <li>alarmResumeSameRunContextOffOn - Organization setup action: alarmResumeSameRunContextOffOn has changed.</li>
 <li>autonomousExperienceOffOn</li>
+<li>callSummarizationOffOn - Organization setup action: callSummarizationOffOn has changed.</li>
 <li>changedCFUniqueOffCustom (Custom Metadata Types) - Organization setup action: changedCFUniqueOffCustom has changed from Blaster to Stormtroopers</li>
 <li>changedCFUniqueOnCustom (Custom Metadata Types) - Organization setup action: changedCFUniqueOnCustom has changed from Blaster to Stormtroopers</li>
 <li>changedOrgWideEmailAddress - Organization setup action: changedOrgWideEmailAddress has changed.</li>
@@ -2284,6 +2380,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>contextualEverywhereEnabledOffOn - Organization setup action: contextualEverywhereEnabledOffOn has changed.</li>
 <li>conversationPilotPrefOffOn - Organization setup action: conversationPilotPrefOffOn has changed.</li>
 <li>conversationZoomPrefOffOn - Organization setup action: conversationZoomPrefOffOn has changed.</li>
+<li>conversationZoomPrefOnOff - Organization setup action: conversationZoomPrefOnOff has changed.</li>
 <li>crossOrgRedirectsEnabledOffOn - Organization setup action: crossOrgRedirectsEnabledOffOn has changed.</li>
 <li>dataCloudReportingPrefOffOn - Organization setup action: dataCloudReportingPrefOffOn has changed.</li>
 <li>debugFlowAsAnotherUserEnabledOff (Process Automation Settings) - Changed Let admins debug flows as other users from on to off</li>
@@ -2293,11 +2390,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>DELETECallCenter (Call Centers) - Organization setup action: DELETECallCenter has changed.</li>
 <li>deleteIpWhiteList (Security Controls) - Deleted Ip AllowList from 14.101.11.1 to 14.101.11.1</li>
 <li>deployEdgeDuringRolloutOffOn - Organization setup action: deployEdgeDuringRolloutOffOn has changed.</li>
+<li>depriveSoqlAccessOffOn - Organization setup action: depriveSoqlAccessOffOn has changed.</li>
 <li>diarizationPrefOffOn - Organization setup action: diarizationPrefOffOn has changed.</li>
 <li>diarizationPrefOnOff - Organization setup action: diarizationPrefOnOff has changed.</li>
 <li>disableSocialProfilesTWOffOn - Organization setup action: disableSocialProfilesTWOffOn has changed.</li>
 <li>disableSocialProfilesYTOffOn - Organization setup action: disableSocialProfilesYTOffOn has changed.</li>
 <li>disableSocialProfilesYTOnOff - Organization setup action: disableSocialProfilesYTOnOff has changed.</li>
+<li>einsteinGPTPlatformEnabledOffOn - Organization setup action: einsteinGPTPlatformEnabledOffOn has changed.</li>
 <li>enablementPartnerPrgmEmailsOffOn - Organization setup action: enablementPartnerPrgmEmailsOffOn has changed.</li>
 <li>enableOverrideGrantAccessOnOff - Organization setup action: enableOverrideGrantAccessOnOff has changed.</li>
 <li>enableSIQUserInbox (Inbox mobile and legacy desktop apps) - Enabled Inbox for user: Platform Integration User</li>
@@ -2308,8 +2407,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>flowBlockAxsToSessionIdOffOn - Organization setup action: flowBlockAxsToSessionIdOffOn has changed.</li>
 <li>flowUseApexExceptionEmailOffOn - Organization setup action: flowUseApexExceptionEmailOffOn has changed.</li>
 <li>INSERTCallCenter (Call Centers) - Organization setup action: INSERTCallCenter has changed.</li>
+<li>inviteCsnUserEnabledOnOff - Organization setup action: inviteCsnUserEnabledOnOff has changed.</li>
 <li>leadInspectorPrefOffOn - Organization setup action: leadInspectorPrefOffOn has changed.</li>
-<li>LocalStorageForLogoutUrlOffOn (Session Settings) - Changed Use Local Storage for Logout URL from Off to On</li>
 <li>lockerServiceNextControlOn - Organization setup action: lockerServiceNextControlOn has changed.</li>
 <li>lockerServiceNextOff - Organization setup action: lockerServiceNextOff has changed.</li>
 <li>lockerServiceNextOffOn - Organization setup action: lockerServiceNextOffOn has changed.</li>
@@ -2317,6 +2416,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>lockerServiceNextOnOff - Organization setup action: lockerServiceNextOnOff has changed.</li>
 <li>mailAppProductivityEnabledOffOn - Organization setup action: mailAppProductivityEnabledOffOn has changed.</li>
 <li>mFADirectUILoginOptInOffOn - Organization setup action: mFADirectUILoginOptInOffOn has changed.</li>
+<li>mFADirectUILoginOptInOnOff - Organization setup action: mFADirectUILoginOptInOnOff has changed.</li>
 <li>negativeOIQuantityEnabledOffOn - Organization setup action: negativeOIQuantityEnabledOffOn has changed.</li>
 <li>optimizerAppEnabledOffOn - Enabled the Salesforce Optimizer Lightning App</li>
 <li>orchestrationInSandboxOffOn - Organization setup action: orchestrationInSandboxOffOn has changed.</li>
@@ -2328,11 +2428,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>rqrEmailChangeConfirmPrefOnOff - Organization setup action: rqrEmailChangeConfirmPrefOnOff has changed.</li>
 <li>s1encryptedstoragepref2off - Organization setup action: s1encryptedstoragepref2off has changed.</li>
 <li>s1encryptedstoragepref2on - Organization setup action: s1encryptedstoragepref2on has changed.</li>
+<li>s1EncryptedStoragePref2OnOff - Organization setup action: s1EncryptedStoragePref2OnOff has changed.</li>
 <li>salesforceInboxReadReceiptsOffOn - Organization setup action: salesforceInboxReadReceiptsOffOn has changed.</li>
 <li>salesforceInboxReadReceiptsOnOff - Organization setup action: salesforceInboxReadReceiptsOnOff has changed.</li>
 <li>salesforceIqOrgBlocklistCreated (Inbox mobile and legacy desktop apps) - Added rebel-alliance.com to org blocklist</li>
 <li>salesforceIqOrgBlocklistDeleted (Inbox mobile and legacy desktop apps) - Removed darth@vader.com from org blocklist</li>
 <li>selectNoOpptyOnLeadConvertOffOn (Customize Leads) - Organization setup action: selectNoOpptyOnLeadConvertOffOn has changed.</li>
+<li>sellerHomePrefOffOn - Organization setup action: sellerHomePrefOffOn has changed.</li>
 <li>sellerHomeSetupOffOn - Organization setup action: sellerHomeSetupOffOn has changed.</li>
 <li>selNoOpptyOnLeadConvertOffOn - Organization setup action: selNoOpptyOnLeadConvertOffOn has changed.</li>
 <li>showGeneratedEmailCheckboxOffOn - Organization setup action: showGeneratedEmailCheckboxOffOn has changed.</li>
@@ -2346,6 +2448,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>socialProfilesEnableOnOff - Organization setup action: socialProfilesEnableOnOff has changed.</li>
 <li>templateEnhancedFolderPrefOffOn - Enable Lightning Email Template Enhanced Folder Pref</li>
 <li>templateEnhancedFolderPrefOnOff - Disable Lightning Email Template Enhanced Folder Pref</li>
+<li>u2FEnabledOffOn - Organization setup action: u2FEnabledOffOn has changed.</li>
 <li>unifiedActivitiesForECIOffOn - Organization setup action: unifiedActivitiesForECIOffOn has changed.</li>
 <li>uploadFilesOnAttachmentsOffOn - Organization setup action: uploadFilesOnAttachmentsOffOn has changed.</li>
 <li>uploadFilesOnAttachmentsOnOff - Organization setup action: uploadFilesOnAttachmentsOnOff has changed.</li>
@@ -2360,11 +2463,12 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>verifyOnEmailChangeOnOff - Organization setup action: verifyOnEmailChangeOnOff has changed.</li>
 <li>videoConferenceZoomOffOn - Organization setup action: videoConferenceZoomOffOn has changed.</li>
 <li>videoConferenceZoomOnOff - Organization setup action: videoConferenceZoomOnOff has changed.</li>
+<li>workOrdersEnabledOnOff - Organization setup action: workOrdersEnabledOnOff has changed.</li>
 <li>zeroOIQuantityEnabledOffOn - Organization setup action: zeroOIQuantityEnabledOffOn has changed.</li>
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','alarmResumeSameRunContextOffOn','autonomousExperienceOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','crossOrgRedirectsEnabledOffOn','dataCloudReportingPrefOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','diarizationPrefOffOn','diarizationPrefOnOff','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','extensionHostUnrestrictedOffOn','flowBlockAxsToSessionIdOffOn','flowUseApexExceptionEmailOffOn','INSERTCallCenter','leadInspectorPrefOffOn','LocalStorageForLogoutUrlOffOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','mailAppProductivityEnabledOffOn','mFADirectUILoginOptInOffOn','negativeOIQuantityEnabledOffOn','optimizerAppEnabledOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthOffOn','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','s1encryptedstoragepref2off','s1encryptedstoragepref2on','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','socialProfilesEnableOffOn','socialProfilesEnableOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','unifiedActivitiesForECIOffOn','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','videoConferenceZoomOffOn','videoConferenceZoomOnOff','zeroOIQuantityEnabledOffOn') 
+WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','alarmResumeSameRunContextOffOn','autonomousExperienceOffOn','callSummarizationOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','crossOrgRedirectsEnabledOffOn','dataCloudReportingPrefOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','einsteinGPTPlatformEnabledOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','extensionHostUnrestrictedOffOn','flowBlockAxsToSessionIdOffOn','flowUseApexExceptionEmailOffOn','INSERTCallCenter','inviteCsnUserEnabledOnOff','leadInspectorPrefOffOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','mailAppProductivityEnabledOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','negativeOIQuantityEnabledOffOn','optimizerAppEnabledOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthOffOn','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','socialProfilesEnableOffOn','socialProfilesEnableOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="password-policies">Password Policies</h3>
@@ -2413,6 +2517,29 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
 WHERE Action IN ('DeleteSandbox','deleteScratchOrg','deployedchangeset','DiscardSandbox') 
+ORDER BY CreatedDate DESC LIMIT 1000
+</code></pre>
+<h3 id="security-controls">Security Controls</h3>
+<ul>
+<li>adddelegatedgroup (Security Controls) - Added new delegated group: Confederacy_of_Independent_Systems</li>
+<li>addedtodelegatedgroup (Security Controls) - Added Geonosis to Confederacy_of_Independent_Systems delegated group</li>
+<li>changeDelegateGroupLoginAccess (Security Controls) - Enabled login access on delegated group Confederacy_of_Independent_Systems</li>
+<li>removedfromdelegatedgroup (Security Controls) - Removed Count Dooku from Confederacy_of_Independent_Systems delegated group</li>
+</ul>
+<pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
+FROM SetupAuditTrail 
+WHERE Action IN ('adddelegatedgroup','addedtodelegatedgroup','changeDelegateGroupLoginAccess','removedfromdelegatedgroup') 
+ORDER BY CreatedDate DESC LIMIT 1000
+</code></pre>
+<h3 id="session-settings">Session Settings</h3>
+<ul>
+<li>LocalStorageForLogoutUrlOffOn (Session Settings) - Changed Use Local Storage for Logout URL from Off to On</li>
+<li>requiredSessionLevelForProfile (Session Settings) - Changed profile Admin: Changed RequiredSessionLevel Value from None to High Assurance</li>
+<li>updateSessionSecurityLevel (Session Settings) - Session Security Level for Passwordless Login changed from High Assurance to Standard</li>
+</ul>
+<pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
+FROM SetupAuditTrail 
+WHERE Action IN ('LocalStorageForLogoutUrlOffOn','requiredSessionLevelForProfile','updateSessionSecurityLevel') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="transaction-security">Transaction Security</h3>
@@ -2497,11 +2624,12 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>hardDeletedCF (Customize Accounts) - Permanently deleted custom field Battleship</li>
 <li>hardDeletedCFCustom (Custom Objects) - Permanently deleted custom field Lightsaber from Jedi</li>
 <li>removedDependency (Field Dependencies) - Removed dependency for "Tested Field" controlled by "Tested Object" on object Error Condition</li>
+<li>undeletedCF (Customize Order Items) - Undeleted custom field Jedi Master</li>
 <li>updatedDependency (Field Dependencies) - Updated dependency rules for "Tested Field" controlled by "Tested Object" on object Error Condition</li>
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('activatedPicklistValueWithColor','activatedPicklistValueWithColorCustom','changedCF','changedCF_RSFFilter','changedCFCustom','changedCFDefault','changedCFDefaultCustom','changedCFDefaultFormula','changedCFDefaultFormulaCustom','changedCFDevName','changedCFDevNameCustom','changedCFFieldHelp','changedCFFieldHelpCustom','changedCFFormula','changedCFFormulaCustom','changedCFLength','changedCFLengthCustom','changedCFOptionOffOn','changedCFOptionOffOnCustom','changedCFOptionOnOff','changedCFOptionOnOffCustom','changedCFScale','changedCFScaleCustom','changedCFType','changedCFTypeCustom','changedCFTypeFormulaCustom','changedCFUniqueOn','createdCF','createdCF_RSF','createdCF_RSFCustom','createdCFCustom','createdCFFormula','createdCFFormulaCustom','createdCFLookup','createdCFLookupCustom','createdCFMasterDetailCustom','createdDependency','dataClassificationNewField','dataClassificationUpdate','deactivatePicklistValueWithColor','deactivatePicklistValueWithColorCustom','deletedCF','deletedCFCustom','entity_history_field_tracked','entity_history_field_untracked','feed_field_untracked','filteredLookupActivate','filteredLookupCreate','filteredLookupCreateNewField','filteredLookupDeactivate','filteredLookupOptional','filteredLookupRequired','hardDeletedCF','hardDeletedCFCustom','removedDependency','updatedDependency') 
+WHERE Action IN ('activatedPicklistValueWithColor','activatedPicklistValueWithColorCustom','changedCF','changedCF_RSFFilter','changedCFCustom','changedCFDefault','changedCFDefaultCustom','changedCFDefaultFormula','changedCFDefaultFormulaCustom','changedCFDevName','changedCFDevNameCustom','changedCFFieldHelp','changedCFFieldHelpCustom','changedCFFormula','changedCFFormulaCustom','changedCFLength','changedCFLengthCustom','changedCFOptionOffOn','changedCFOptionOffOnCustom','changedCFOptionOnOff','changedCFOptionOnOffCustom','changedCFScale','changedCFScaleCustom','changedCFType','changedCFTypeCustom','changedCFTypeFormulaCustom','changedCFUniqueOn','createdCF','createdCF_RSF','createdCF_RSFCustom','createdCFCustom','createdCFFormula','createdCFFormulaCustom','createdCFLookup','createdCFLookupCustom','createdCFMasterDetailCustom','createdDependency','dataClassificationNewField','dataClassificationUpdate','deactivatePicklistValueWithColor','deactivatePicklistValueWithColorCustom','deletedCF','deletedCFCustom','entity_history_field_tracked','entity_history_field_untracked','feed_field_untracked','filteredLookupActivate','filteredLookupCreate','filteredLookupCreateNewField','filteredLookupDeactivate','filteredLookupOptional','filteredLookupRequired','hardDeletedCF','hardDeletedCFCustom','removedDependency','undeletedCF','updatedDependency') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="custom-metadata">Custom Metadata</h3>
@@ -2530,6 +2658,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>changedCustEntRecName (Custom Objects) - Changed record name of custom object Droid from Droid Name to Droid Serial Number</li>
 <li>changedCustEntRptOn (Custom Objects) - Changed Enable Reports setting for custom object Battleship from off to on</li>
 <li>changedCustEntSearchIndexingOn (Custom Objects) - Changed Search Indexing setting for custom object Stormtrooper from off to on</li>
+<li>changedCustEntTypeAutoNum (Custom Objects) - Changed record name data type of custom object Staging Utility to Auto Number (Starting from 0)</li>
 <li>createdCustEnt (Custom Objects) - Created custom object: Battleship</li>
 <li>createdFieldSet (Customize Assets) - Created Field Set Line Editor on Quote</li>
 <li>delete_external_id (Company Information) - Dropped external identifier designation: Account.Battleship Factory ID</li>
@@ -2541,7 +2670,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('add_external_id','changeDataCaptureCreatedWithChannel','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOn','changedCustEntSearchIndexingOn','createdCustEnt','createdFieldSet','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet') 
+WHERE Action IN ('add_external_id','changeDataCaptureCreatedWithChannel','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOn','changedCustEntSearchIndexingOn','changedCustEntTypeAutoNum','createdCustEnt','createdFieldSet','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="picklists">Picklists</h3>
@@ -2672,6 +2801,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 <li>externalSharingModelEnabled (Sharing Defaults) - Enabled External Sharing Model</li>
 <li>insertSharingRule (Sharing Rules) - Created Opportunity Owner Sharing Rule EMEA</li>
 <li>noChildImplicitEnabled (Sharing Rules) - Enabled faster account sharing recalculation by not storing contact implicit child shares</li>
+<li>recalcSharingRuleComplete (Sharing Rules) - Completed sharing rule recalculation: Account</li>
+<li>recalcSharingRuleStart (Sharing Rules) - Initiated sharing rule recalculation: Opportunity</li>
 <li>recalcSingleSharingRuleComplete (Sharing Rules) - Completed Opportunity Owner Rule recalculation: EMEA</li>
 <li>recalcSingleSharingRuleStart (Sharing Rules) - Initiated Opportunity Owner Rule recalculation: EMEA</li>
 <li>secureGuestUserRecordAccessEnabled (Sharing Defaults) - Enabled Secure Guest User Record Access</li>
@@ -2679,7 +2810,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 </ul>
 <pre><code>SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser 
 FROM SetupAuditTrail 
-WHERE Action IN ('deleteRoleSharingRuleCascade','deleteSharingRule','externalSharingModelEnabled','insertSharingRule','noChildImplicitEnabled','recalcSingleSharingRuleComplete','recalcSingleSharingRuleStart','secureGuestUserRecordAccessEnabled','updateSharingRule') 
+WHERE Action IN ('deleteRoleSharingRuleCascade','deleteSharingRule','externalSharingModelEnabled','insertSharingRule','noChildImplicitEnabled','recalcSharingRuleComplete','recalcSharingRuleStart','recalcSingleSharingRuleComplete','recalcSingleSharingRuleStart','secureGuestUserRecordAccessEnabled','updateSharingRule') 
 ORDER BY CreatedDate DESC LIMIT 1000
 </code></pre>
 <h3 id="sharing-sets">Sharing Sets</h3>

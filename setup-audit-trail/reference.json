@@ -6,56 +6,6 @@
     "category": "Organization Management",
     "section": null
   },
-
-  {
-    "action": "changedCustEntTypeAutoNum",
-    "display": "Changed record name data type of custom object Staging Utility to Auto Number (Starting from 0)",
-    "title": "Custom Objects",
-    "category": "Schema",
-    "section": "Custom Objects"
-  },
-  {
-    "action": "s1EncryptedStoragePref2OnOff",
-    "display": "Organization setup action: s1EncryptedStoragePref2OnOff has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
-  {
-    "action": "conversationZoomPrefOnOff",
-    "display": "Organization setup action: conversationZoomPrefOnOff has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
-  {
-    "action": "inviteCsnUserEnabledOnOff",
-    "display": "Organization setup action: inviteCsnUserEnabledOnOff has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
-  {
-    "action": "workOrdersEnabledOnOff",
-    "display": "Organization setup action: workOrdersEnabledOnOff has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
-  {
-    "action": "sellerHomePrefOffOn",
-    "display": "Organization setup action: sellerHomePrefOffOn has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
-  {
-    "action": "depriveSoqlAccessOffOn",
-    "display": "Organization setup action: depriveSoqlAccessOffOn has changed.",
-    "title": "Org Preferences",
-    "category": "Organization Management",
-    "section": null
-  },
   {
     "action": "accountInspectorPrefOffOn",
     "display": "Organization setup action: accountInspectorPrefOffOn has changed.",
@@ -183,6 +133,13 @@
     "section": "Company Information"
   },
   {
+    "action": "adddelegatedgroup",
+    "display": "Added new delegated group: Confederacy_of_Independent_Systems",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": "Security Controls"
+  },
+  {
     "action": "addedFieldToCompactLayout",
     "display": "Added Name field to Death_Star Compact Layout on Death Star",
     "title": "Layouts",
@@ -195,6 +152,13 @@
     "title": "Approval Process",
     "category": "Automation",
     "section": "Approval Process"
+  },
+  {
+    "action": "addedtodelegatedgroup",
+    "display": "Added Geonosis to Confederacy_of_Independent_Systems delegated group",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": "Security Controls"
   },
   {
     "action": "addeduserpackagelicense",
@@ -261,6 +225,13 @@
     "action": "BlackTabFrameworkActionRun",
     "display": "A Salesforce employee ran EventLogFileOptInReleaseTask in Update mode ",
     "title": "Black Tab Framework",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "callSummarizationOffOn",
+    "display": "Organization setup action: callSummarizationOffOn has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -660,6 +631,13 @@
     "section": "Custom Tabs"
   },
   {
+    "action": "changedCustEntTypeAutoNum",
+    "display": "Changed record name data type of custom object Staging Utility to Auto Number (Starting from 0)",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedCustLinkBehavior",
     "display": "Changed Activate_Superlaser button or link behavior from Display in existing window without sidebar or header to Display in existing window with sidebar",
     "title": "Links, Buttons and Actions",
@@ -776,6 +754,13 @@
     "title": "Matching and Duplicate Rules",
     "category": "Data Management",
     "section": "Duplicate Rule"
+  },
+  {
+    "action": "changeDelegateGroupLoginAccess",
+    "display": "Enabled login access on delegated group Confederacy_of_Independent_Systems",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": "Security Controls"
   },
   {
     "action": "changedemail",
@@ -1310,6 +1295,13 @@
   {
     "action": "conversationZoomPrefOffOn",
     "display": "Organization setup action: conversationZoomPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "conversationZoomPrefOnOff",
+    "display": "Organization setup action: conversationZoomPrefOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -2127,6 +2119,13 @@
     "section": "Custom Objects"
   },
   {
+    "action": "deletedprocessdefinition",
+    "display": "Deleted Approval Process: Visit Approval v2 for Object: Death Star Visit",
+    "title": "Approval Process",
+    "category": "Automation",
+    "section": "Approval Process"
+  },
+  {
     "action": "deletedprocessnode",
     "display": "Deleted Process Step: Trooper Approval for Approval Process: Visit Approval v2 for Object: Death Star Visit",
     "title": "Approval Process",
@@ -2246,6 +2245,13 @@
     "section": null
   },
   {
+    "action": "depriveSoqlAccessOffOn",
+    "display": "Organization setup action: depriveSoqlAccessOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "diarizationPrefOffOn",
     "display": "Organization setup action: diarizationPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -2341,6 +2347,13 @@
     "display": "Einstein Conversation Insights configuration: Turn On Related Record Matching was turned on.",
     "title": "Einstein",
     "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "einsteinGPTPlatformEnabledOffOn",
+    "display": "Organization setup action: einsteinGPTPlatformEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
     "section": null
   },
   {
@@ -2524,6 +2537,20 @@
     "title": "Named Credentials",
     "category": "Organization Management",
     "section": "External Credentials"
+  },
+  {
+    "action": "ExternalServicesCreate",
+    "display": "Created External Service Registration QuoteAutoApprovals",
+    "title": "Integrations",
+    "category": "Automation",
+    "section": "Integrations"
+  },
+  {
+    "action": "ExternalServicesSchemaChange",
+    "display": "Changed External Service Registration QuoteAutoApprovals: schema was changed",
+    "title": "Integrations",
+    "category": "Automation",
+    "section": "Integrations"
   },
   {
     "action": "externalSharingModelEnabled",
@@ -2883,6 +2910,13 @@
     "section": "Custom Apps"
   },
   {
+    "action": "inviteCsnUserEnabledOnOff",
+    "display": "Organization setup action: inviteCsnUserEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "leadassrule",
     "display": "Changed Lead Assignment Rule New Default Rule",
     "title": "Miscellaneous",
@@ -3046,6 +3080,13 @@
   {
     "action": "mFADirectUILoginOptInOffOn",
     "display": "Organization setup action: mFADirectUILoginOptInOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "mFADirectUILoginOptInOnOff",
+    "display": "Organization setup action: mFADirectUILoginOptInOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -3882,6 +3923,13 @@
     "section": "Custom Objects"
   },
   {
+    "action": "removedfromdelegatedgroup",
+    "display": "Removed Count Dooku from Confederacy_of_Independent_Systems delegated group",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": "Security Controls"
+  },
+  {
     "action": "removedprocessactionitem",
     "display": "Removed Action: Approval for Approval Process: Visit Approval v2 for Object: Death Star Visit",
     "title": "Approval Process",
@@ -4036,6 +4084,13 @@
     "section": null
   },
   {
+    "action": "s1EncryptedStoragePref2OnOff",
+    "display": "Organization setup action: s1EncryptedStoragePref2OnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "salesforceInboxReadReceiptsOffOn",
     "display": "Organization setup action: salesforceInboxReadReceiptsOffOn has changed.",
     "title": "Org Preferences",
@@ -4111,6 +4166,13 @@
     "title": "Password Policies",
     "category": "Organization Management",
     "section": "Password Policies"
+  },
+  {
+    "action": "sellerHomePrefOffOn",
+    "display": "Organization setup action: sellerHomePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "sellerHomeSetupOffOn",
@@ -4606,6 +4668,13 @@
     "section": "Connected Apps"
   },
   {
+    "action": "undeletedCF",
+    "display": "Undeleted custom field Jedi Master",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Customize Order Items"
+  },
+  {
     "action": "unfrozeuser",
     "display": "Unfroze user account for Darth Vader",
     "title": "User Activation and Auth",
@@ -5008,6 +5077,13 @@
     "action": "warnForceDotComRedirectionOnOff",
     "display": "Disabled warnings for previous .force.com site hostname redirections",
     "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "workOrdersEnabledOnOff",
+    "display": "Organization setup action: workOrdersEnabledOnOff has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
