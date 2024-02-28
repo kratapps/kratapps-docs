@@ -236,7 +236,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 - SetupEntityAccessAudit_PermissionSet_CustomPermission_Disabled (Manage Users) - Changed permission set Sith Lord: Death Star Access Custom Permission was disabled
 - SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled (Manage Users) - Changed permission set Sith Lord: Death_Star_Access Custom Permission was enabled
 - SetupEntityAccessAudit_PermissionSet_TabSet_Disabled
-- SetupEntityAccessAudit_PermissionSet_TabSet_Enabled
+- SetupEntityAccessAudit_PermissionSet_TabSet_Enabled (Manage Users) - Changed permission set DeathStarControls: Death Star Panel app is enabled
 
 
 ```
