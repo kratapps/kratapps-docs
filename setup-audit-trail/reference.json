@@ -4285,8 +4285,10 @@
   },
   {
     "action": "SetupEntityAccessAudit_PermissionSet_TabSet_Enabled",
+    "display": "Changed permission set DeathStarControls: Death Star Panel app is enabled",
     "title": "Permission Sets",
-    "category": "Permission Management"
+    "category": "Permission Management",
+    "section": "Manage Users"
   },
   {
     "action": "SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom",
