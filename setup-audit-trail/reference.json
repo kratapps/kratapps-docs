@@ -606,8 +606,10 @@
   },
   {
     "action": "changedCustEntName",
+    "display": "Changed object name of Death Star 2 custom object from Death_Star to Death_Star_2",
     "title": "Custom Objects",
-    "category": "Schema"
+    "category": "Schema",
+    "section": "Custom Objects"
   },
   {
     "action": "changedCustEntRecName",
