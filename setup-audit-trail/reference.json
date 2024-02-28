@@ -599,8 +599,10 @@
   },
   {
     "action": "changedCustEntMask",
+    "display": "Changed record name display format for custom object Estimate from Estimate-{000000} to E-{000000}",
     "title": "Custom Objects",
-    "category": "Schema"
+    "category": "Schema",
+    "section": "Custom Objects"
   },
   {
     "action": "changedCustEntName",
