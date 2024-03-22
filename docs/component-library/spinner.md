@@ -12,7 +12,7 @@ performing slow computations. Showing and hiding spinner works immediately.
 Deploy Spinner:
 
 ```text
-sfdx kratapps:remote:source:deploy -s https://github.com/kratapps/component-library -p src/main/default/lwc/spinner -u myOrg
+sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
 ```
 
 ## Specification
@@ -22,7 +22,7 @@ methods to select the c-spinner component automatically.
 
 Components
 
--   [lwc/spinner](https://github.com/kratapps/component-library/blob/main/src/main/default/lwc/spinner)
+-   [lwc/spinner](https://github.com/kratapps/component-library/tree/main/src/library/lwc/spinner)
 
 ### Exports
 
@@ -49,13 +49,14 @@ Components
 ```
 
 ```js
+import { handleError } from "c/errorHandler";
 import { hideSpinner, showSpinner } from "c/spinner";
 
 try {
     await showSpinner(this);
     // do what you need here
 } catch (e) {
-    // handle error
+    handleError(e, { element: this });
 } finally {
     await hideSpinner(this);
 }
