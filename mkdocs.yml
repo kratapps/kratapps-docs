@@ -68,7 +68,11 @@ extra_javascript:
 nav:
   - Component Library:
     - Overview: component-library/overview/components.md
+    - Apex:
+      - JSON Preprocessor: components-library/json-preprocessor.md
     - LWC:
+      - Alert: component-library/alert.md
+      - Error Handler: component-library/error-handler.md
       - Spinner: component-library/spinner.md
   - Test Data Factory: 
     - Docs: test-data-factory/index.md
