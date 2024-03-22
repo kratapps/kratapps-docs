@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../overview/components/">
-      
-      
-        <link rel="next" href="../../test-data-factory/">
       
       
       <link rel="icon" href="../../images/favicon.ico">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Spinner - Docs</title>
+        <title>JSON Preprocessor - Docs</title>
       
     
     
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#spinner" class="md-skip">
+        <a href="#json-preprocessor" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Spinner
+              JSON Preprocessor
             
           </span>
         </div>
@@ -195,12 +191,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../overview/components/" class="md-tabs__link">
           
   
@@ -283,8 +277,6 @@
       
   
   
-    
-  
   
   
     
@@ -295,12 +287,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -314,7 +306,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Component Library
@@ -346,21 +338,19 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
@@ -374,7 +364,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             LWC
@@ -385,30 +375,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Spinner
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../spinner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -417,77 +387,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#specification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Specification
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Specification">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exports" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exports
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methods
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -729,9 +628,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exports" class="md-nav__link">
+  <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Exports
+      Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
     </span>
   </a>
   
@@ -758,6 +666,75 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replace-empty-strings-with-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace Empty Strings with Null
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snake-case-to-camel-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snake Case to Camel Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capitalize-and-uncapitalize-first-letter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capitalize and Uncapitalize First Letter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-map-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sort Map Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-fields-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace Fields By Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-fields-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Fields By Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reformat-datetime-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reformat Datetime Values
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -775,44 +752,114 @@
                   
 
 
-<h1 id="spinner">Spinner</h1>
-<p><img alt="lwc" src="https://img.shields.io/badge/LWC-component-blue" /></p>
-<p>Displays an animated spinner.</p>
-<p>Spinners are a loading indicators that should be shown when retrieving data or
-performing slow computations. Showing and hiding spinner works immediately.</p>
+<h1 id="json-preprocessor">JSON Preprocessor</h1>
+<p><img alt="apex" src="https://img.shields.io/badge/Apex-service-darkblue" /></p>
+<p>Preprocess JSON.</p>
 <h2 id="installation">Installation</h2>
-<p>Deploy Spinner:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
+<p>Deploy preprocessor:</p>
+<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library -m ApexClass:JsonPreprocessor -m ApexClass:JsonPreprocessorTest -o my-org
 </code></pre>
 <h2 id="specification">Specification</h2>
-<p>Use the exported showSpinner/hideSpinner functions instead of the api show/hide
-methods to select the c-spinner component automatically.</p>
 <p>Components</p>
 <ul>
-<li><a href="https://github.com/kratapps/component-library/tree/main/src/library/lwc/spinner">lwc/spinner</a></li>
+<li><a href="https://github.com/kratapps/component-library/blob/main/src/library/classes/JsonPreprocessor.cls">classes/JsonPreprocessor</a></li>
+<li><a href="https://github.com/kratapps/component-library/blob/main/src/library/classes/JsonPreprocessorTest.cls">classes/JsonPreprocessorTest</a></li>
 </ul>
-<h3 id="exports">Exports</h3>
+<h3 id="fields">Fields</h3>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Arguments</th>
-<th>Returns</th>
+<th>Field Name</th>
+<th>Type</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>showSpinner</td>
-<td>component (LightningElement)</td>
-<td>Promise</td>
-<td>Select the c-spinner in the component's markup and show the spinner. The component argument is usually 'this'.</td>
+<td>pretty</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Prettify result JSON.</td>
 </tr>
 <tr>
-<td>hideSpinner</td>
-<td>component (LightningElement)</td>
-<td>Promise</td>
-<td>Select the c-spinner in the component's markup and hide the spinner. The component argument is usually 'this'.</td>
+<td>replaceEmptyStringsWithNull</td>
+<td>Boolean</td>
+<td>false</td>
+<td>"" =&gt; null</td>
+</tr>
+<tr>
+<td>snakeCaseToCamelCase</td>
+<td>Boolean</td>
+<td>false</td>
+<td>some_key =&gt; someKey</td>
+</tr>
+<tr>
+<td>capitalizeFirstLetter</td>
+<td>Boolean</td>
+<td>false</td>
+<td>someKey =&gt; SomeKey</td>
+</tr>
+<tr>
+<td>uncapitalizeFirstLetter</td>
+<td>Boolean</td>
+<td>false</td>
+<td>SomeKey =&gt; someKey</td>
+</tr>
+<tr>
+<td>sortMapFields</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Sort JSON keys.</td>
+</tr>
+<tr>
+<td>replaceFieldNamesMap</td>
+<td>Map<String,String></td>
+<td></td>
+<td>Map JSON keys to a different value. Can be used to change Apex reserved keyword fields before deserialization.</td>
+</tr>
+<tr>
+<td>datetimeFieldsToReformat</td>
+<td>Set\<String></td>
+<td></td>
+<td>Collection of JSON keys holding datetime values to reformat.</td>
+</tr>
+<tr>
+<td>datetimeFormat</td>
+<td>String</td>
+<td></td>
+<td>Datetime format used for datetimeFieldToReformat JSON fields.</td>
+</tr>
+<tr>
+<td>sourceTimeZone</td>
+<td>TimeZone</td>
+<td>UTC</td>
+<td>Original datetime time zone.</td>
+</tr>
+<tr>
+<td>targetTimeZone</td>
+<td>TimeZone</td>
+<td>UTC</td>
+<td>Target datetime time zone.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="constructors">Constructors</h3>
+<table>
+<thead>
+<tr>
+<th>Params</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>The result JSON won't be prettified</td>
+</tr>
+<tr>
+<td>Boolean pretty</td>
+<td>The result JSON will be prettified</td>
 </tr>
 </tbody>
 </table>
@@ -820,45 +867,92 @@ methods to select the c-spinner component automatically.</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Arguments</th>
+<th>Method</th>
+<th>Params</th>
 <th>Returns</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>show</td>
-<td></td>
-<td>Promise</td>
-<td>Show the spinner over its slotted content. Use the exported showSpinner function to get the c-spinner component, and to call the show method automatically.</td>
-</tr>
-<tr>
-<td>hide</td>
-<td></td>
-<td>Promise</td>
-<td>Hide the spinner. Use the exported hideSpinner function to get the c-spinner component, and to call the hide method automatically.</td>
+<td>process</td>
+<td>String jsonString</td>
+<td>String</td>
+<td>Process JSON and return a new JSON string.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<pre><code class="language-html">&lt;div class=&quot;slds-is-relative&quot;&gt;
-    &lt;c-spinner&gt;
-        &lt;!-- your content to show spinner over --&gt;
-    &lt;/c-spinner&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="language-js">import { handleError } from &quot;c/errorHandler&quot;;
-import { hideSpinner, showSpinner } from &quot;c/spinner&quot;;
+<p>In the example below, we would like to prepare a JSON for deserialization into
+an Apex object. We would like to change the original JSON in two ways:</p>
+<ol>
+<li>Change the field names from snake case to camel case to follow PMDs field
+   naming conventions.</li>
+<li>Change the "number" field name because it's a reserved word in Apex.</li>
+</ol>
+<pre><code class="language-apex">JsonPreprocessor processor = new JsonPreprocessor();
+processor.snakeCaseToCamelCase = true;
+processor.replaceFieldNamesMap.put('number', 'number_x');
 
-try {
-    await showSpinner(this);
-    // do what you need here
-} catch (e) {
-    handleError(e, { element: this });
-} finally {
-    await hideSpinner(this);
-}
+String originalJson = '{&quot;some_key&quot;:&quot;myValue&quot;,&quot;number&quot;:150}';
+String processedJson = processor.process(originalJson);
+// {&quot;someKey:&quot;myValue&quot;,&quot;number_x&quot;:150}
+System.debug(processedJson);
+</code></pre>
+<h3 id="replace-empty-strings-with-null">Replace Empty Strings with Null</h3>
+<pre><code class="language-apex">processor.replaceEmptyStringsWithNull = true;
+String originalJson = '{&quot;key&quot;:&quot;&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;key&quot;:null}
+</code></pre>
+<h3 id="snake-case-to-camel-case">Snake Case to Camel Case</h3>
+<pre><code class="language-apex">processor.snakeCaseToCamelCase = true;
+String originalJson = '{&quot;some_key&quot;:&quot;myValue&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;someKey&quot;:&quot;myValue&quot;}
+</code></pre>
+<h3 id="capitalize-and-uncapitalize-first-letter">Capitalize and Uncapitalize First Letter</h3>
+<pre><code class="language-apex">processor.capitalizeFirstLetter = true;
+String originalJson = '{&quot;someKey&quot;:&quot;myValue&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;SomeKey&quot;:&quot;myValue&quot;}
+
+processor.uncapitalizeFirstLetter = true;
+String originalJson = '{&quot;SomeKey&quot;:&quot;myValue&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;someKey&quot;:&quot;myValue&quot;}
+</code></pre>
+<h3 id="sort-map-fields">Sort Map Fields</h3>
+<pre><code class="language-apex">processor.sortMapFields = true;
+String originalJson = '{&quot;b&quot;:&quot;myValue2&quot;,&quot;a&quot;:&quot;myValue&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;a&quot;:&quot;myValue&quot;,&quot;b&quot;:&quot;myValue2&quot;}
+</code></pre>
+<h3 id="replace-fields-by-name">Replace Fields By Name</h3>
+<pre><code class="language-apex">processor.replaceFieldNamesMap.put('number', 'ticketNumber');
+processor.replaceFieldNamesMap.put('string', 'string_x');
+String originalJson = '{&quot;number&quot;:150,&quot;string&quot;:&quot;myValue&quot;}';
+String processedJson = processor.process(originalJson);
+// {&quot;ticketNumber&quot;:150,&quot;string_x&quot;:&quot;myValue&quot;}
+</code></pre>
+<h3 id="remove-fields-by-name">Remove Fields By Name</h3>
+<pre><code class="language-apex">processor.fieldNamesToRemove.add('number');
+String originalJson = '{&quot;size&quot;:2,&quot;result&quot;:[{&quot;number&quot;: &quot;ABC0001234&quot;,&quot;description&quot;: &quot;desc1&quot;},{&quot;description&quot;: &quot;&quot;, &quot;number&quot;: &quot;ABC0004567&quot;}]}';
+String processedJson = processor.process(originalJson);
+// {&quot;size&quot;:2,&quot;result&quot;:[{&quot;description&quot;:&quot;desc1&quot;},{&quot;description&quot;:&quot;&quot;}]}
+</code></pre>
+<h3 id="reformat-datetime-values">Reformat Datetime Values</h3>
+<p>Let's say in our REST response we have datetime value in Los Angeles time zone
+and we are planning to deserialize this JSON into UTC.</p>
+<pre><code class="language-apex">
+processor.datetimeFieldsToReformat.add('dt');
+processor.datetimeFormat = 'yyyy-MM-dd\'T\'HH:mm:ss.SSSZ';
+processor.sourceTimeZone = TimeZone.getTimeZone('America/Los_Angeles');
+// UTC is default value for both source and target time zone.
+processor.targetTimeZone = TimeZone.getTimeZone('UTC');
+String originalJson = '{&quot;dt&quot;:&quot;2022-12-15 04:15:30&quot;}';
+String result = processor.process(originalJson);
+// {&quot;dt&quot;:&quot;2022-12-15T12:15:30.000+0000&quot;}
 </code></pre>
 
 
@@ -890,44 +984,6 @@ try {
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../overview/components/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Overview
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../test-data-factory/" class="md-footer__link md-footer__link--next" aria-label="Next: Docs">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Docs
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
