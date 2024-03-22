@@ -69,7 +69,7 @@ nav:
   - Component Library:
     - Overview: component-library/overview/components.md
     - Apex:
-      - JSON Preprocessor: components-library/json-preprocessor.md
+      - JSON Preprocessor: component-library/json-preprocessor.md
     - LWC:
       - Alert: component-library/alert.md
       - Error Handler: component-library/error-handler.md
