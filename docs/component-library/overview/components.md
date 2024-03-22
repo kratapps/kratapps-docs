@@ -18,7 +18,10 @@ or only some components:
 sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
 ```
 
-or clone the project and deploy using standard sfdx command.
+or clone the project and deploy using standard sf command
+
+or copy and paste the code from
+[github.com/kratapps/component-library](https://docs.kratapps.com/component-library/overview/components/).
 
 ## Documentation
 
