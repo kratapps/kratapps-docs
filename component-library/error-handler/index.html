@@ -846,10 +846,19 @@
 <p>Handle errors and show either a toast or error prompt to a user.</p>
 <h2 id="installation">Installation</h2>
 <p>Deploy JS service:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/errorHandler -o my-org
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/errorHandler \
+    -o my-org
 </code></pre>
 <p>Optionally, deploy the Apex LightningError class:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library -m ApexClass:LightningError -m ApexClass:LightningErrorTest -o my-org
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    -m ApexClass:LightningError \
+    -m ApexClass:LightningErrorTest \
+    -o my-org
 </code></pre>
 <h2 id="specification">Specification</h2>
 <p>Use <code>handleError</code> function to handle errors in a generic way. Pass config with
@@ -960,7 +969,10 @@ public static Case submitCase(Case myCase) {
     try {
         return CaseService.submitCase(myCase);
     } catch (Exception e) {
-        throw LightningError.create('Failed to submit the case.').addError(e.getMessage()).toAuraHandledException();
+        throw LightningError
+                .create('Failed to submit the case.')
+                .addError(e.getMessage())
+                .toAuraHandledException();
     }
 }
 </code></pre>

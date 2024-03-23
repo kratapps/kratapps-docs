@@ -993,17 +993,21 @@ provide support if code deployed unpackaged.</p>
 <pre><code class="language-text">https://login.salesforce.com/packaging/installPackage.apexp?p0=04t09000000vCWn
 </code></pre>
 <p>or using sfdx cli:</p>
-<pre><code class="language-shell">sfdx force:package:install -p 04t09000000vCWn -u myOrg
+<pre><code class="language-shell">sf package install -p 04t09000000vCWn -o my-org
 </code></pre>
 <h3 id="unpackaged">Unpackaged</h3>
 <p>Use our sfdx plugin to install all components in the <code>src/main/core/</code> without
 cloning:</p>
-<pre><code class="language-shell">sfdx kratapps:remote:source:deploy -s https://github.com/kratapps/test-data-factory -p src/main/core/ -u myOrg
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name test-data-factory \
+    --source-dir src/main/core/ \
+    -o my-org
 </code></pre>
 <p>or clone the project and deploy using standard sfdx command:</p>
 <pre><code class="language-shell">git clone https://github.com/kratapps/test-data-factory.git
 cd test-data-factory
-sfdx force:source:deploy -p src/main/core/ -u myOrg
+sf project deploy start --source-dir src/main/core/ -o my-org
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>You can create records using the TDF immediately in small projects or sObjects

@@ -815,7 +815,11 @@
 performing slow computations. Showing and hiding spinner works immediately.</p>
 <h2 id="installation">Installation</h2>
 <p>Deploy Spinner:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/spinner/ \
+    -o my-org
 </code></pre>
 <h2 id="specification">Specification</h2>
 <p>Use the exported showSpinner/hideSpinner functions instead of the api show/hide

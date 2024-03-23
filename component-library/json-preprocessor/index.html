@@ -891,7 +891,12 @@
 <p>Preprocess JSON.</p>
 <h2 id="installation">Installation</h2>
 <p>Deploy preprocessor:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library -m ApexClass:JsonPreprocessor -m ApexClass:JsonPreprocessorTest -o my-org
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    -m ApexClass:JsonPreprocessor \
+    -m ApexClass:JsonPreprocessorTest \
+    -o my-org
 </code></pre>
 <h2 id="specification">Specification</h2>
 <p>Components</p>

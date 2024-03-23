@@ -808,7 +808,11 @@ feature or page. It persists over a session and appears without the user
 initiating the action.</p>
 <h2 id="installation">Installation</h2>
 <p>Deploy Alert:</p>
-<pre><code class="language-text">sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/alert/ -o my-org
+<pre><code class="language-shell">sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/alert/ \
+    -o my-org
 </code></pre>
 <h2 id="specification">Specification</h2>
 <p>Components</p>
@@ -858,7 +862,7 @@ initiating the action.</p>
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<pre><code class="language-html">&lt;c-alert variant=&quot;warning&quot;&gt; Alert message or component.&lt;/c-alert&gt;
+<pre><code class="language-html">&lt;c-alert variant=&quot;warning&quot;&gt;Alert message or component.&lt;/c-alert&gt;
 </code></pre>
 
 
