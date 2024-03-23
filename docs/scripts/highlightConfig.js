@@ -2,7 +2,7 @@ const decimalDigits = '[0-9](_*[0-9])*';
 const frac = `\\.(${decimalDigits})`;
 const hexDigits = '[0-9a-fA-F](_*[0-9a-fA-F])*';
 
-var NUMERIC = {
+const NUMERIC = {
     className: 'number',
     variants: [
         // DecimalFloatingPointLiteral
@@ -181,4 +181,4 @@ function languageApex(hljs) {
 }
 
 hljs.registerLanguage('apex', () => languageApex(hljs));
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();

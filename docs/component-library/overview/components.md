@@ -29,7 +29,7 @@ sf kratapps remote deploy start \
 or clone the project and deploy using standard sf command
 
 or copy and paste the code from
-[github.com/kratapps/component-library](https://docs.kratapps.com/component-library/overview/components/).
+[github.com/kratapps/component-library](https://github.com/kratapps/component-library/tree/main/src/library).
 
 ## Documentation
 
