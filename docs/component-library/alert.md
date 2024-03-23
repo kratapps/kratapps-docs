@@ -39,5 +39,5 @@ Components
 ## Example
 
 ```html
-<c-alert variant="warning"> Alert message or component. </c-alert>
+<c-alert variant="warning">Alert message or component.</c-alert>
 ```
