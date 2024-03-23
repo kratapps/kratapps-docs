@@ -13,8 +13,12 @@ initiating the action.
 
 Deploy Alert:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/alert/ -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/alert/ \
+    -o my-org
 ```
 
 ## Specification
@@ -35,5 +39,5 @@ Components
 ## Example
 
 ```html
-<c-alert variant="warning"> Alert message or component.</c-alert>
+<c-alert variant="warning"> Alert message or component. </c-alert>
 ```

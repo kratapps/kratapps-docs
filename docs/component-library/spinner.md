@@ -11,8 +11,12 @@ performing slow computations. Showing and hiding spinner works immediately.
 
 Deploy Spinner:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/spinner/ \
+    -o my-org
 ```
 
 ## Specification

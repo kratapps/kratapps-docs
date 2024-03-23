@@ -8,14 +8,23 @@ Handle errors and show either a toast or error prompt to a user.
 
 Deploy JS service:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/errorHandler -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/errorHandler \
+    -o my-org
 ```
 
 Optionally, deploy the Apex LightningError class:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library -m ApexClass:LightningError -m ApexClass:LightningErrorTest -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    -m ApexClass:LightningError \
+    -m ApexClass:LightningErrorTest \
+    -o my-org
 ```
 
 ## Specification
@@ -98,7 +107,10 @@ public static Case submitCase(Case myCase) {
     try {
         return CaseService.submitCase(myCase);
     } catch (Exception e) {
-        throw LightningError.create('Failed to submit the case.').addError(e.getMessage()).toAuraHandledException();
+        throw LightningError
+                .create('Failed to submit the case.')
+                .addError(e.getMessage())
+                .toAuraHandledException();
     }
 }
 ```

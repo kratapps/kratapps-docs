@@ -59,7 +59,7 @@ https://login.salesforce.com/packaging/installPackage.apexp?p0=04t09000000vCWn
 or using sfdx cli:
 
 ```shell
-sfdx force:package:install -p 04t09000000vCWn -u myOrg
+sf package install -p 04t09000000vCWn -o my-org
 ```
 
 ### Unpackaged
@@ -68,7 +68,11 @@ Use our sfdx plugin to install all components in the `src/main/core/` without
 cloning:
 
 ```shell
-sfdx kratapps:remote:source:deploy -s https://github.com/kratapps/test-data-factory -p src/main/core/ -u myOrg
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name test-data-factory \
+    --source-dir src/main/core/ \
+    -o my-org
 ```
 
 or clone the project and deploy using standard sfdx command:
@@ -76,7 +80,7 @@ or clone the project and deploy using standard sfdx command:
 ```shell
 git clone https://github.com/kratapps/test-data-factory.git
 cd test-data-factory
-sfdx force:source:deploy -p src/main/core/ -u myOrg
+sf project deploy start --source-dir src/main/core/ -o my-org
 ```
 
 ## Usage

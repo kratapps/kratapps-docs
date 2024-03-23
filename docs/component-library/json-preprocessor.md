@@ -8,8 +8,13 @@ Preprocess JSON.
 
 Deploy preprocessor:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library -m ApexClass:JsonPreprocessor -m ApexClass:JsonPreprocessorTest -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    -m ApexClass:JsonPreprocessor \
+    -m ApexClass:JsonPreprocessorTest \
+    -o my-org
 ```
 
 ## Specification

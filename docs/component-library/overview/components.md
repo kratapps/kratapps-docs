@@ -8,14 +8,22 @@ Custom Salesforce LWC and Apex Components.
 
 Use our sfdx plugin to install all components without cloning:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/ -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/ \
+    -o my-org
 ```
 
 or only some components:
 
-```text
-sf kratapps remote deploy start --repo-owner kratapps --repo-name component-library --source-dir src/library/lwc/spinner/ -o my-org
+```shell
+sf kratapps remote deploy start \
+    --repo-owner kratapps \
+    --repo-name component-library \
+    --source-dir src/library/lwc/spinner/ \
+    -o my-org
 ```
 
 or clone the project and deploy using standard sf command
